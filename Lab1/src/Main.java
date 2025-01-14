@@ -1,6 +1,5 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-///Найти, каких букв, гласных или согласных, больше в каждом предложении текста.
 import java.util.Scanner;
 public class Main {
     static String vowels = "аеёиоуыэюя";
@@ -9,13 +8,12 @@ public class Main {
     static Integer countconsonants = 0;
     Integer countsentences = 0;
     public static boolean isVowel(char c) {
-        c = Character.toLowerCase(c); // Приводим к нижнему регистру для простоты
+        c = Character.toLowerCase(c); 
         return vowels.indexOf(c) != -1;
     }
 
-    // Метод для проверки, является ли символ согласной буквой
     public static boolean isConsonant(char c) {
-        c = Character.toLowerCase(c); // Приводим к нижнему регистру для простоты
+        c = Character.toLowerCase(c); 
         return consonants.indexOf(c) != -1;
     }
 
